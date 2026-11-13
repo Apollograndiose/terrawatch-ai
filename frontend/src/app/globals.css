@@ -1,0 +1,218 @@
+@import "tailwindcss";
+
+/*
+ * TerraWatch design tokens.
+ * Surfaces: deep navy -> graphite. Accent: restrained cyan/electric blue.
+ * Fire hues (amber -> red) are reserved for wildfire observations and alerts.
+ * Water hues (sky/cyan) are reserved for flood/water layers.
+ */
+:root {
+  --bg: #070b14;
+  --surface-0: #0a101c;
+  --surface-1: #0e1626;
+  --surface-2: #131d31;
+  --surface-3: #1a263d;
+  --line: #1f2c45;
+  --line-strong: #2b3b5a;
+  --text: #e4ebf5;
+  --text-muted: #93a2bb;
+  --text-faint: #62718b;
+  --accent: #38bdf8;
+  --accent-strong: #0ea5e9;
+  --accent-soft: rgba(56, 189, 248, 0.12);
+  --fire-1: #fde68a;
+  --fire-2: #fb923c;
+  --fire-3: #f97316;
+  --fire-4: #ef4444;
+  --fire-5: #b91c1c;
+  --ok: #34d399;
+  --warn: #fbbf24;
+  --err: #f87171;
+  --ai: #c084fc;
+  --ai-soft: rgba(192, 132, 252, 0.12);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface-0: var(--surface-0);
+  --color-surface-1: var(--surface-1);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-text: var(--text);
+  --color-muted: var(--text-muted);
+  --color-faint: var(--text-faint);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-fire-1: var(--fire-1);
+  --color-fire-2: var(--fire-2);
+  --color-fire-3: var(--fire-3);
+  --color-fire-4: var(--fire-4);
+  --color-ok: var(--ok);
+  --color-warn: var(--warn);
+  --color-err: var(--err);
+  --color-ai: var(--ai);
+  --font-sans: var(--font-plex-sans);
+  --font-mono: var(--font-plex-mono);
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "ss01", "tnum";
+}
+
+::selection {
+  background: rgba(56, 189, 248, 0.3);
+}
+
+/* Thin, quiet scrollbars for dense panels */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.panel {
+  background: linear-gradient(180deg, rgba(19, 29, 49, 0.92), rgba(14, 22, 38, 0.92));
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.panel-flat {
+  background: var(--surface-1);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.eyebrow {
+  font-family: var(--font-plex-mono), ui-monospace, monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.mono {
+  font-family: var(--font-plex-mono), ui-monospace, monospace;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(56, 189, 248, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.035) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fade-in {
+  animation: fade-in 0.28s ease-out both;
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+.pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}
+.skeleton {
+  background: linear-gradient(90deg, var(--surface-2) 0, var(--surface-3) 80px, var(--surface-2) 160px);
+  background-size: 400px 100%;
+  animation: shimmer 1.4s linear infinite;
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in,
+  .pulse-dot,
+  .skeleton {
+    animation: none;
+  }
+}
+
+/* MapLibre overrides to match the theme */
+.maplibregl-ctrl-group {
+  background: var(--surface-2) !important;
+  border: 1px solid var(--line) !important;
+  box-shadow: none !important;
+}
+.maplibregl-ctrl-group button + button {
+  border-top: 1px solid var(--line) !important;
+}
+.maplibregl-ctrl-group button .maplibregl-ctrl-icon {
+  filter: invert(0.85);
+}
+.maplibregl-ctrl-attrib {
+  background: rgba(7, 11, 20, 0.75) !important;
+  color: var(--text-faint) !important;
+  font-size: 10px !important;
+}
+.maplibregl-ctrl-attrib a {
+  color: var(--text-muted) !important;
+}
+.maplibregl-ctrl-scale {
+  background: rgba(7, 11, 20, 0.6) !important;
+  border-color: var(--text-muted) !important;
+  color: var(--text-muted) !important;
+  font-family: var(--font-plex-mono), monospace;
+  font-size: 10px !important;
+}
+.maplibregl-popup-content {
+  background: var(--surface-2) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px !important;
+  padding: 8px 10px !important;
+  font-size: 12px;
+}
+.maplibregl-popup-tip {
+  display: none;
+}
+
+input[type="range"] {
+  accent-color: var(--accent);
+}
+input[type="checkbox"] {
+  accent-color: var(--accent);
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.7);
+}

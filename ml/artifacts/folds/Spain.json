@@ -1,0 +1,62 @@
+{
+  "task": "per-pixel open surface water segmentation (Sentinel-1 VV/VH dB)",
+  "dataset": "Sen1Floods11 v1.1 hand-labelled subset (Bonafilia et al., 2020)",
+  "feature_names": [
+    "vv",
+    "vh",
+    "vv_minus_vh",
+    "vv_mean3",
+    "vh_mean3",
+    "vv_mean7",
+    "vh_mean7",
+    "vv_mean15",
+    "vh_mean15",
+    "vv_std3",
+    "vh_std3",
+    "vv_std7",
+    "vh_std7",
+    "vv_std15",
+    "vh_std15",
+    "vv_lee7",
+    "vh_lee7",
+    "vv_rel_median",
+    "vh_rel_median",
+    "vv_rel_otsu",
+    "vh_rel_otsu",
+    "valid_frac7"
+  ],
+  "classifier": "sklearn.ensemble.HistGradientBoostingClassifier",
+  "params": {
+    "max_iter": 300,
+    "learning_rate": 0.1,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 50,
+    "l2_regularization": 1.0,
+    "early_stopping": false,
+    "random_state": 0
+  },
+  "samples_per_chip": 5000,
+  "sklearn_version": "1.9.1",
+  "python": "3.13.5",
+  "created_utc": "2026-11-13T02:13:51.460871+00:00",
+  "threshold": 0.5,
+  "trained_on_events": [
+    "Ghana",
+    "India",
+    "Mekong",
+    "Nigeria",
+    "Pakistan",
+    "Paraguay",
+    "Somalia",
+    "Sri-Lanka",
+    "USA"
+  ],
+  "excluded_events": [
+    "Spain",
+    "Bolivia"
+  ],
+  "role": "loeo_fold:Spain",
+  "fit_seconds": 17.0,
+  "train_samples": 1971892,
+  "fixed_threshold_db": -16.75
+}

@@ -1,0 +1,37 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/next-env.d.ts
+frontend/public/maplibre/
+frontend/test-results/
+frontend/playwright-report/
+*.tsbuildinfo
+
+# Secrets
+.env
+.env.local
+
+# Large or regenerable data
+# Sen1Floods11 download (~1 GB) and feature cache
+ml/data/
+# live FIRMS cache and rendered imagery
+data/cache/
+# Sen1Floods11 rasters: fetched, not redistributed
+data/flood_demo/s1/
+data/flood_demo/label/
+data/flood_demo/jrc/
+data/flood_demo/s2/
+
+.DS_Store
+
+# Local Claude Code / editor config
+.claude/

@@ -1,0 +1,889 @@
+{
+  "files": [
+    {
+      "country": "Australia",
+      "year": 2012,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2012/modis_2012_Australia.csv",
+      "bytes": 37847345,
+      "sha256": "e80dbce681e7647402898831c9b68b2b186ce23f4a5a28684de2dabd03484e87",
+      "rows": 474964,
+      "retrieved_utc": "2026-11-13T01:55:08.548803+00:00"
+    },
+    {
+      "country": "Australia",
+      "year": 2013,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2013/modis_2013_Australia.csv",
+      "bytes": 15143483,
+      "sha256": "afe8d545f7c64094b04f50e31f41309b1c87597ae662dd7c55bbdd4fb619de20",
+      "rows": 190517,
+      "retrieved_utc": "2026-11-13T01:55:16.329739+00:00"
+    },
+    {
+      "country": "Australia",
+      "year": 2014,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2014/modis_2014_Australia.csv",
+      "bytes": 20449784,
+      "sha256": "aa05319ca4031ab53b4814096f7a57fc17f29cd3e2f177e00b97395a61d15cb0",
+      "rows": 256921,
+      "retrieved_utc": "2026-11-13T01:55:17.061806+00:00"
+    },
+    {
+      "country": "Australia",
+      "year": 2015,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2015/modis_2015_Australia.csv",
+      "bytes": 19053692,
+      "sha256": "08cedbe283dd5e1b76c84e0efdeee380ac1ac853bbcfafcff8abcbae7d206cff",
+      "rows": 239462,
+      "retrieved_utc": "2026-11-13T01:55:17.652150+00:00"
+    },
+    {
+      "country": "Australia",
+      "year": 2016,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2016/modis_2016_Australia.csv",
+      "bytes": 12650638,
+      "sha256": "9d71e2bd85d85405e82467e0db9ca9e10c715a1e5234e75a86e688425eed70c7",
+      "rows": 159223,
+      "retrieved_utc": "2026-11-13T01:55:18.053465+00:00"
+    },
+    {
+      "country": "Australia",
+      "year": 2017,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2017/modis_2017_Australia.csv",
+      "bytes": 21760820,
+      "sha256": "8ef987ec89c87452fb1ea639a17f9c7728a36966dc207cc5c699f1f5bdff802b",
+      "rows": 273312,
+      "retrieved_utc": "2026-11-13T01:55:20.258720+00:00"
+    },
+    {
+      "country": "Australia",
+      "year": 2018,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2018/modis_2018_Australia.csv",
+      "bytes": 24763900,
+      "sha256": "035a077b88cfd84484f0091fa034993b77b2f73ddc0dbda56bec8da880a616ed",
+      "rows": 307359,
+      "retrieved_utc": "2026-11-13T01:55:21.725460+00:00"
+    },
+    {
+      "country": "Australia",
+      "year": 2019,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2019/modis_2019_Australia.csv",
+      "bytes": 25021097,
+      "sha256": "c24edcdf1bd55862c1e7f897006bcd8d3e00f3d4115a8661f4d687137cabfb39",
+      "rows": 310484,
+      "retrieved_utc": "2026-11-13T01:55:23.516193+00:00"
+    },
+    {
+      "country": "Australia",
+      "year": 2020,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2020/modis_2020_Australia.csv",
+      "bytes": 12487063,
+      "sha256": "4426abfc1360897daafc066248707696aa84b5e0aba3c6f20183fe455db74176",
+      "rows": 155524,
+      "retrieved_utc": "2026-11-13T01:55:24.211166+00:00"
+    },
+    {
+      "country": "Australia",
+      "year": 2021,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2021/modis_2021_Australia.csv",
+      "bytes": 13819813,
+      "sha256": "23722270e8cf9b23483eccb8c0c30037f7f01429cc2abcb2bccd973037a6b101",
+      "rows": 171948,
+      "retrieved_utc": "2026-11-13T01:55:24.646741+00:00"
+    },
+    {
+      "country": "Australia",
+      "year": 2022,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2022/modis_2022_Australia.csv",
+      "bytes": 12887209,
+      "sha256": "00523ce7c932ebff5f0f357e682d0c4cebe4ad7b6a1410b3ed1e80aea4963b2f",
+      "rows": 160278,
+      "retrieved_utc": "2026-11-13T01:55:25.038516+00:00"
+    },
+    {
+      "country": "Australia",
+      "year": 2023,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2023/modis_2023_Australia.csv",
+      "bytes": 32319634,
+      "sha256": "6d7e8ef3eb1b984c66d2604b80dd11e3364d4e500aaa82a72327e7b02bb77d63",
+      "rows": 395733,
+      "retrieved_utc": "2026-11-13T01:55:25.849100+00:00"
+    },
+    {
+      "country": "Australia",
+      "year": 2024,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2024/modis_2024_Australia.csv",
+      "bytes": 18232002,
+      "sha256": "95dd19c6d7a0a062a85cf2ec7efaa18862b8cd9d2d2d53d78275cf7c5b0f26cc",
+      "rows": 223807,
+      "retrieved_utc": "2026-11-13T01:55:26.374845+00:00"
+    },
+    {
+      "country": "Australia",
+      "year": 2025,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2025/modis_2025_Australia.csv",
+      "bytes": 20793178,
+      "sha256": "c5ca88d85cea4a19d0d9c67184ce900304ffa6e715d29ba3cba9d12e159290d6",
+      "rows": 255336,
+      "retrieved_utc": "2026-11-13T01:55:27.173132+00:00"
+    },
+    {
+      "country": "Brazil",
+      "year": 2012,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2012/modis_2012_Brazil.csv",
+      "bytes": 31692432,
+      "sha256": "1a9887200ac2f76f1ff1d79a16f5ade89aa1e7496083fc6f9ca723d599c2f286",
+      "rows": 402205,
+      "retrieved_utc": "2026-11-13T01:55:28.068276+00:00"
+    },
+    {
+      "country": "Brazil",
+      "year": 2013,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2013/modis_2013_Brazil.csv",
+      "bytes": 17345997,
+      "sha256": "56f988b178933d642e8285e6727f9f824e532b59437a12c2c3d10165fec2c545",
+      "rows": 220409,
+      "retrieved_utc": "2026-11-13T01:55:29.164131+00:00"
+    },
+    {
+      "country": "Brazil",
+      "year": 2014,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2014/modis_2014_Brazil.csv",
+      "bytes": 24512988,
+      "sha256": "1883fbaa50b7091b044621ca2b585ad6b4253b95476e9c3215be29ec3198bbb3",
+      "rows": 311349,
+      "retrieved_utc": "2026-11-13T01:55:29.936020+00:00"
+    },
+    {
+      "country": "Brazil",
+      "year": 2015,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2015/modis_2015_Brazil.csv",
+      "bytes": 33035087,
+      "sha256": "27d5de1a2cd0eb2af0e4911b93cba9fb6a8a9256a4d9d238fb48bd6628e3e602",
+      "rows": 419826,
+      "retrieved_utc": "2026-11-13T01:55:32.797293+00:00"
+    },
+    {
+      "country": "Brazil",
+      "year": 2016,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2016/modis_2016_Brazil.csv",
+      "bytes": 26308349,
+      "sha256": "a12097eedb21ea0c6742a24d571122e8848a1cefeaca6691fa1f4a047b94e919",
+      "rows": 334349,
+      "retrieved_utc": "2026-11-13T01:55:35.629679+00:00"
+    },
+    {
+      "country": "Brazil",
+      "year": 2017,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2017/modis_2017_Brazil.csv",
+      "bytes": 30642832,
+      "sha256": "a6e2e271a1b87f539afcae88def18eb7ebe28da333879f3e984a1c34d16c3753",
+      "rows": 389240,
+      "retrieved_utc": "2026-11-13T01:55:36.478206+00:00"
+    },
+    {
+      "country": "Brazil",
+      "year": 2018,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2018/modis_2018_Brazil.csv",
+      "bytes": 18455696,
+      "sha256": "efddb4ab4bb1d25f8ef37e4cafa6c79735f4a7a17346f689ef635fd2851a0f11",
+      "rows": 231849,
+      "retrieved_utc": "2026-11-13T01:55:37.034477+00:00"
+    },
+    {
+      "country": "Brazil",
+      "year": 2019,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2019/modis_2019_Brazil.csv",
+      "bytes": 29901181,
+      "sha256": "2a14ae9be81ff99d5d480b667c0d5c508e65e931fa0927c7abe5832980380bd8",
+      "rows": 374668,
+      "retrieved_utc": "2026-11-13T01:55:38.039433+00:00"
+    },
+    {
+      "country": "Brazil",
+      "year": 2020,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2020/modis_2020_Brazil.csv",
+      "bytes": 32395704,
+      "sha256": "663bd08ed07e9a556b297866fa2c1a074c42939fc318604b00ea81afbf8f51ac",
+      "rows": 405388,
+      "retrieved_utc": "2026-11-13T01:55:39.831068+00:00"
+    },
+    {
+      "country": "Brazil",
+      "year": 2021,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2021/modis_2021_Brazil.csv",
+      "bytes": 27209512,
+      "sha256": "8466734fc9982b90b9a3d14b1b182d2f0bbdfe7fc606320339d9f951e03eb14f",
+      "rows": 340582,
+      "retrieved_utc": "2026-11-13T01:55:40.661475+00:00"
+    },
+    {
+      "country": "Brazil",
+      "year": 2022,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2022/modis_2022_Brazil.csv",
+      "bytes": 28905347,
+      "sha256": "ce67f4c7d1d4ed3265b346dc54feac1378d5f2bd6f4841faaf3d486501a8b85a",
+      "rows": 362785,
+      "retrieved_utc": "2026-11-13T01:55:41.593026+00:00"
+    },
+    {
+      "country": "Brazil",
+      "year": 2023,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2023/modis_2023_Brazil.csv",
+      "bytes": 28810183,
+      "sha256": "659ce5160d96fb2f82491efe4464eb30a0fc8fbbaa373f2962187b7069ae48b2",
+      "rows": 357737,
+      "retrieved_utc": "2026-11-13T01:55:42.793814+00:00"
+    },
+    {
+      "country": "Brazil",
+      "year": 2024,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2024/modis_2024_Brazil.csv",
+      "bytes": 42592737,
+      "sha256": "b617f757e2b1279802412e71cd457f26a3714e21045fce2aaf25fee908a0c305",
+      "rows": 527894,
+      "retrieved_utc": "2026-11-13T01:55:45.977908+00:00"
+    },
+    {
+      "country": "Brazil",
+      "year": 2025,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2025/modis_2025_Brazil.csv",
+      "bytes": 19063013,
+      "sha256": "1da12d96d12dc23d72026f638b9e09085a5a61d174def0e9899385af45d67b62",
+      "rows": 236731,
+      "retrieved_utc": "2026-11-13T01:55:46.882482+00:00"
+    },
+    {
+      "country": "Canada",
+      "year": 2012,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2012/modis_2012_Canada.csv",
+      "bytes": 3191026,
+      "sha256": "6f7a105ba5eb2ecfbd9c30df1f392730f1c1a87fbae38c844f3ca4a75de96cb8",
+      "rows": 40168,
+      "retrieved_utc": "2026-11-13T01:55:48.286400+00:00"
+    },
+    {
+      "country": "Canada",
+      "year": 2013,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2013/modis_2013_Canada.csv",
+      "bytes": 5370932,
+      "sha256": "34e60cce1398bcc868495101a63a561c70bbeb2c6bcf23c739764feaa86bb91b",
+      "rows": 67760,
+      "retrieved_utc": "2026-11-13T01:55:49.035329+00:00"
+    },
+    {
+      "country": "Canada",
+      "year": 2014,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2014/modis_2014_Canada.csv",
+      "bytes": 6289708,
+      "sha256": "0216eed22eca119524a02ae0c558204dc52f905ea26657fd48c52ac372400c7c",
+      "rows": 79188,
+      "retrieved_utc": "2026-11-13T01:55:50.571054+00:00"
+    },
+    {
+      "country": "Canada",
+      "year": 2015,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2015/modis_2015_Canada.csv",
+      "bytes": 5895144,
+      "sha256": "f2b49962fd036ac9449f1068f576de7f68245eeab973ca5a08fb8a067f7aa626",
+      "rows": 73912,
+      "retrieved_utc": "2026-11-13T01:55:51.161539+00:00"
+    },
+    {
+      "country": "Canada",
+      "year": 2016,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2016/modis_2016_Canada.csv",
+      "bytes": 2144357,
+      "sha256": "68b9318ef41c77fa7454132fc7e8d497befee680ceedbbac1ff4575a71476a19",
+      "rows": 26960,
+      "retrieved_utc": "2026-11-13T01:55:51.412019+00:00"
+    },
+    {
+      "country": "Canada",
+      "year": 2017,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2017/modis_2017_Canada.csv",
+      "bytes": 7578235,
+      "sha256": "e8a06ea8e0888b990e8cc95f4a6f257ecff1d2a6170530588dee6a0710551415",
+      "rows": 95117,
+      "retrieved_utc": "2026-11-13T01:55:51.920917+00:00"
+    },
+    {
+      "country": "Canada",
+      "year": 2018,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2018/modis_2018_Canada.csv",
+      "bytes": 5139248,
+      "sha256": "370edfecd99b6f0c8c5a02aa88b853ccdb5cd6936a27702e2f933de644fb4051",
+      "rows": 63707,
+      "retrieved_utc": "2026-11-13T01:55:52.409436+00:00"
+    },
+    {
+      "country": "Canada",
+      "year": 2019,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2019/modis_2019_Canada.csv",
+      "bytes": 3271204,
+      "sha256": "7d19031505dc8eb015814a928bcbf3c603a5d5e288762b5909e26cc7b76f0036",
+      "rows": 40577,
+      "retrieved_utc": "2026-11-13T01:55:57.986357+00:00"
+    },
+    {
+      "country": "Canada",
+      "year": 2020,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2020/modis_2020_Canada.csv",
+      "bytes": 978642,
+      "sha256": "971cfd3704ec7790b2f674f2f8a9b84d1bd87d71f95e6a5207417071872a5434",
+      "rows": 12219,
+      "retrieved_utc": "2026-11-13T01:55:58.501977+00:00"
+    },
+    {
+      "country": "Canada",
+      "year": 2021,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2021/modis_2021_Canada.csv",
+      "bytes": 7813074,
+      "sha256": "f1d723112bd3029a1ef18d399819fcadd83f324bebf65cd7f0072799d96ca36a",
+      "rows": 97100,
+      "retrieved_utc": "2026-11-13T01:55:59.118202+00:00"
+    },
+    {
+      "country": "Canada",
+      "year": 2022,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2022/modis_2022_Canada.csv",
+      "bytes": 2827694,
+      "sha256": "57dbc5d8396b62a6212acbd5cbaf1ba4044eab9149b788bb5bf2aad44a058313",
+      "rows": 35106,
+      "retrieved_utc": "2026-11-13T01:55:59.447852+00:00"
+    },
+    {
+      "country": "Canada",
+      "year": 2023,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2023/modis_2023_Canada.csv",
+      "bytes": 26472607,
+      "sha256": "5abc5b1a8962888b36e3cae22296a9a4d701fc1765ca0a833f9a2ac76e271137",
+      "rows": 324003,
+      "retrieved_utc": "2026-11-13T01:56:01.743994+00:00"
+    },
+    {
+      "country": "Canada",
+      "year": 2024,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2024/modis_2024_Canada.csv",
+      "bytes": 12052143,
+      "sha256": "6b9a9202ba19f89ec089072dc08a09eca8a7ab0a4c27d8434e169e7fc589a079",
+      "rows": 147547,
+      "retrieved_utc": "2026-11-13T01:56:02.839477+00:00"
+    },
+    {
+      "country": "Canada",
+      "year": 2025,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2025/modis_2025_Canada.csv",
+      "bytes": 12749281,
+      "sha256": "436a845a818fdfec02e7e70a8b01e0321ff8a906e3a7d45d585b9676343dff8c",
+      "rows": 156313,
+      "retrieved_utc": "2026-11-13T01:56:05.198241+00:00"
+    },
+    {
+      "country": "United States",
+      "year": 2012,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2012/modis_2012_United_States.csv",
+      "bytes": 10853454,
+      "sha256": "d11a4d7c204981f27d9d7020b7367be49f64976b8e25464271240602d144295f",
+      "rows": 137295,
+      "retrieved_utc": "2026-11-13T01:56:05.848117+00:00"
+    },
+    {
+      "country": "United States",
+      "year": 2013,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2013/modis_2013_United_States.csv",
+      "bytes": 8074775,
+      "sha256": "2ce080c702a7381bba6a9d0b2926e608da8b37db8e1b5a1ce8b905499a8aecc7",
+      "rows": 102348,
+      "retrieved_utc": "2026-11-13T01:56:06.610223+00:00"
+    },
+    {
+      "country": "United States",
+      "year": 2014,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2014/modis_2014_United_States.csv",
+      "bytes": 7774285,
+      "sha256": "655279188cce2caa6668f4c671fb5e6ae36259e01c4e9aaa6f0499621c8f96eb",
+      "rows": 98871,
+      "retrieved_utc": "2026-11-13T01:56:07.184103+00:00"
+    },
+    {
+      "country": "United States",
+      "year": 2015,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2015/modis_2015_United_States.csv",
+      "bytes": 11628581,
+      "sha256": "67d731cc9e42d4279421040c33f7d23a6458ae5196b0aa445fa3115866390b5b",
+      "rows": 146984,
+      "retrieved_utc": "2026-11-13T01:56:07.932381+00:00"
+    },
+    {
+      "country": "United States",
+      "year": 2016,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2016/modis_2016_United_States.csv",
+      "bytes": 8879583,
+      "sha256": "55f87d1248deb753f3076633809004b136f5937aeab5bb39872b13aad2f03b3a",
+      "rows": 112736,
+      "retrieved_utc": "2026-11-13T01:56:08.576939+00:00"
+    },
+    {
+      "country": "United States",
+      "year": 2017,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2017/modis_2017_United_States.csv",
+      "bytes": 12063842,
+      "sha256": "d5256d2c936c4cc0cf84fc8fdc4aedc3ed5e7bd00e6080e4c377da51fa6b7009",
+      "rows": 152702,
+      "retrieved_utc": "2026-11-13T01:56:09.622766+00:00"
+    },
+    {
+      "country": "United States",
+      "year": 2018,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2018/modis_2018_United_States.csv",
+      "bytes": 10488759,
+      "sha256": "5e6bf58957d2735abde985f9bbc205973f2dd5cea8705968b70c6e60afe23855",
+      "rows": 130986,
+      "retrieved_utc": "2026-11-13T01:56:10.358642+00:00"
+    },
+    {
+      "country": "United States",
+      "year": 2019,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2019/modis_2019_United_States.csv",
+      "bytes": 8554573,
+      "sha256": "a478e23cd205e1367aaa3d543da00f15036ee5e0d81071c530ee78cd1368555e",
+      "rows": 107213,
+      "retrieved_utc": "2026-11-13T01:56:11.328803+00:00"
+    },
+    {
+      "country": "United States",
+      "year": 2020,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2020/modis_2020_United_States.csv",
+      "bytes": 12343543,
+      "sha256": "466e2c7616fe1d813a7bfa66971160b64d6baf341fab22ffe8fac06dfbf7961a",
+      "rows": 153848,
+      "retrieved_utc": "2026-11-13T01:56:12.240146+00:00"
+    },
+    {
+      "country": "United States",
+      "year": 2021,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2021/modis_2021_United_States.csv",
+      "bytes": 13123878,
+      "sha256": "bc227a3c85f03fe847d5b96da87cc67588774043c0efa4f0c85179c12187f897",
+      "rows": 163687,
+      "retrieved_utc": "2026-11-13T01:56:13.355059+00:00"
+    },
+    {
+      "country": "United States",
+      "year": 2022,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2022/modis_2022_United_States.csv",
+      "bytes": 10424099,
+      "sha256": "20710b0b6c1630ca44d39c537abb7c10f9c0050f66770b936edc412ef0e4be76",
+      "rows": 130358,
+      "retrieved_utc": "2026-11-13T01:56:16.224894+00:00"
+    },
+    {
+      "country": "United States",
+      "year": 2023,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2023/modis_2023_United_States.csv",
+      "bytes": 7572283,
+      "sha256": "8f693b80488414db0494deac1081f4c658769618100e402a830fb823f8f6ec1f",
+      "rows": 94000,
+      "retrieved_utc": "2026-11-13T01:56:17.078938+00:00"
+    },
+    {
+      "country": "United States",
+      "year": 2024,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2024/modis_2024_United_States.csv",
+      "bytes": 10006305,
+      "sha256": "26c5f22e9d41bd8d5d22402eaf5293dc7a5bc7415d37da42cd2e0a3b78b95ca4",
+      "rows": 123712,
+      "retrieved_utc": "2026-11-13T01:56:17.677265+00:00"
+    },
+    {
+      "country": "United States",
+      "year": 2025,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2025/modis_2025_United_States.csv",
+      "bytes": 8874396,
+      "sha256": "2b66bf1932202eaa9ddbdf408e2ec590de2bd84abd6c634d68952d4d196c8730",
+      "rows": 109845,
+      "retrieved_utc": "2026-11-13T01:56:18.714137+00:00"
+    },
+    {
+      "country": "Greece",
+      "year": 2012,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2012/modis_2012_Greece.csv",
+      "bytes": 166399,
+      "sha256": "79666dfa5de1d5dd74d6047c76a7baffe6efe9bc5d84add17b3ce6fcd1ae048d",
+      "rows": 2156,
+      "retrieved_utc": "2026-11-13T01:56:18.870201+00:00"
+    },
+    {
+      "country": "Greece",
+      "year": 2013,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2013/modis_2013_Greece.csv",
+      "bytes": 139906,
+      "sha256": "8e3742b79891222753950acdf34fe4785e337b68bd47d5f8b4ee00f56c40f029",
+      "rows": 1816,
+      "retrieved_utc": "2026-11-13T01:56:19.030380+00:00"
+    },
+    {
+      "country": "Greece",
+      "year": 2014,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2014/modis_2014_Greece.csv",
+      "bytes": 104942,
+      "sha256": "aeafedcc665acd1e6dde6a9fb1cd987ee34283a29057e89645db0714d452e8ad",
+      "rows": 1362,
+      "retrieved_utc": "2026-11-13T01:56:20.255560+00:00"
+    },
+    {
+      "country": "Greece",
+      "year": 2015,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2015/modis_2015_Greece.csv",
+      "bytes": 101565,
+      "sha256": "cbc734bc420229b5bc236e603441d2a8695e2c9efe89967c3e116d35c22fbcb7",
+      "rows": 1322,
+      "retrieved_utc": "2026-11-13T01:56:20.432889+00:00"
+    },
+    {
+      "country": "Greece",
+      "year": 2016,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2016/modis_2016_Greece.csv",
+      "bytes": 129400,
+      "sha256": "a35e486f1440ef6239852e814f864f579da9a2d645067a3d226c955cb7fe1e10",
+      "rows": 1677,
+      "retrieved_utc": "2026-11-13T01:56:20.591961+00:00"
+    },
+    {
+      "country": "Greece",
+      "year": 2017,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2017/modis_2017_Greece.csv",
+      "bytes": 116669,
+      "sha256": "cfa42e4ff92ac1131cdea80b8831f9c8c5c213a4347c76177804c3c074d3794c",
+      "rows": 1513,
+      "retrieved_utc": "2026-11-13T01:56:20.765842+00:00"
+    },
+    {
+      "country": "Greece",
+      "year": 2018,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2018/modis_2018_Greece.csv",
+      "bytes": 65529,
+      "sha256": "e3a91967ed530e14e3d054ba6ebed869edda53efd67d6ac8d8b0ee299a9678f4",
+      "rows": 839,
+      "retrieved_utc": "2026-11-13T01:56:20.986151+00:00"
+    },
+    {
+      "country": "Greece",
+      "year": 2019,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2019/modis_2019_Greece.csv",
+      "bytes": 80383,
+      "sha256": "683fa2469284078fe13d084937f2d89192443b40f316e9ea41b1d1ef744a3e21",
+      "rows": 1034,
+      "retrieved_utc": "2026-11-13T01:56:21.196536+00:00"
+    },
+    {
+      "country": "Greece",
+      "year": 2020,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2020/modis_2020_Greece.csv",
+      "bytes": 89710,
+      "sha256": "ad3075cbdc748811d0e87b387db2a7c6304e5af7fbf52ef7f461198574e80c32",
+      "rows": 1153,
+      "retrieved_utc": "2026-11-13T01:56:21.356747+00:00"
+    },
+    {
+      "country": "Greece",
+      "year": 2021,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2021/modis_2021_Greece.csv",
+      "bytes": 196787,
+      "sha256": "5aaedfb1739565c3570a8cd2c0ccc188dd2d871d73cf33f5e5c190684682432e",
+      "rows": 2481,
+      "retrieved_utc": "2026-11-13T01:56:22.667104+00:00"
+    },
+    {
+      "country": "Greece",
+      "year": 2022,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2022/modis_2022_Greece.csv",
+      "bytes": 89652,
+      "sha256": "ee0f93bb988ba88ee41bd8c7a72163b02100986236132678c07d34e6ec9e21dc",
+      "rows": 1147,
+      "retrieved_utc": "2026-11-13T01:56:27.902747+00:00"
+    },
+    {
+      "country": "Greece",
+      "year": 2023,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2023/modis_2023_Greece.csv",
+      "bytes": 260442,
+      "sha256": "3130a6465f3eefcbd206ad39e0b0fba36c6e09714de2e9aac106499fadc57a9d",
+      "rows": 3262,
+      "retrieved_utc": "2026-11-13T01:56:28.085587+00:00"
+    },
+    {
+      "country": "Greece",
+      "year": 2024,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2024/modis_2024_Greece.csv",
+      "bytes": 102412,
+      "sha256": "909c3c4edfc1d0ffa813377cba5ffccfc465ab91c277f33f1d24779cf5186992",
+      "rows": 1281,
+      "retrieved_utc": "2026-11-13T01:56:28.236432+00:00"
+    },
+    {
+      "country": "Greece",
+      "year": 2025,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2025/modis_2025_Greece.csv",
+      "bytes": 94741,
+      "sha256": "3cc082501bdbcde41422856ef009b96f1ea3e0b0e23baf3c9f381109054e6110",
+      "rows": 1188,
+      "retrieved_utc": "2026-11-13T01:56:28.423633+00:00"
+    },
+    {
+      "country": "Portugal",
+      "year": 2012,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2012/modis_2012_Portugal.csv",
+      "bytes": 276315,
+      "sha256": "0683942f248162441e71f4a369f9461fedefb447b96586e3a695b7961abd6dd7",
+      "rows": 3552,
+      "retrieved_utc": "2026-11-13T01:56:28.598144+00:00"
+    },
+    {
+      "country": "Portugal",
+      "year": 2013,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2013/modis_2013_Portugal.csv",
+      "bytes": 345651,
+      "sha256": "3302c8792616f4b4528738eaaa20240aae2e3c04a99753dbe4d6016bde906e04",
+      "rows": 4438,
+      "retrieved_utc": "2026-11-13T01:56:28.768751+00:00"
+    },
+    {
+      "country": "Portugal",
+      "year": 2014,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2014/modis_2014_Portugal.csv",
+      "bytes": 47514,
+      "sha256": "c8a808b7c968896d571a92bc58789d0d40915c18e2dcb59ba2feade366730e73",
+      "rows": 614,
+      "retrieved_utc": "2026-11-13T01:56:28.920874+00:00"
+    },
+    {
+      "country": "Portugal",
+      "year": 2015,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2015/modis_2015_Portugal.csv",
+      "bytes": 159883,
+      "sha256": "822886a003c01e4f28b01bb4956aa67d75a471eef177f8781e588fb8da37c21e",
+      "rows": 2058,
+      "retrieved_utc": "2026-11-13T01:56:29.077664+00:00"
+    },
+    {
+      "country": "Portugal",
+      "year": 2016,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2016/modis_2016_Portugal.csv",
+      "bytes": 373472,
+      "sha256": "ab0763a311af365e3293127f45c70d226c0c04d3108c13a2c9432039f55fb3c9",
+      "rows": 4801,
+      "retrieved_utc": "2026-11-13T01:56:29.262017+00:00"
+    },
+    {
+      "country": "Portugal",
+      "year": 2017,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2017/modis_2017_Portugal.csv",
+      "bytes": 517415,
+      "sha256": "ec879bb494c173f252e66269a2613d16106962fe760001e87dcbc8ee2b25d7ef",
+      "rows": 6645,
+      "retrieved_utc": "2026-11-13T01:56:29.456273+00:00"
+    },
+    {
+      "country": "Portugal",
+      "year": 2018,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2018/modis_2018_Portugal.csv",
+      "bytes": 102991,
+      "sha256": "320e89ce1d21ecd56b4fde4bb32d76953f86ea902876ae1bcee59df4f5671d34",
+      "rows": 1310,
+      "retrieved_utc": "2026-11-13T01:56:29.604274+00:00"
+    },
+    {
+      "country": "Portugal",
+      "year": 2019,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2019/modis_2019_Portugal.csv",
+      "bytes": 100031,
+      "sha256": "75c05687f29938bc26c5ffbf6c23d7492798a090ddb239290a62fd9c88212ac4",
+      "rows": 1269,
+      "retrieved_utc": "2026-11-13T01:56:29.770206+00:00"
+    },
+    {
+      "country": "Portugal",
+      "year": 2020,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2020/modis_2020_Portugal.csv",
+      "bytes": 106460,
+      "sha256": "05733eaeabcd7be8571f9a5e010a1fc6109dc2771538d1f2cf8527e3337c57fd",
+      "rows": 1349,
+      "retrieved_utc": "2026-11-13T01:56:29.923166+00:00"
+    },
+    {
+      "country": "Portugal",
+      "year": 2021,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2021/modis_2021_Portugal.csv",
+      "bytes": 74425,
+      "sha256": "c801bee9cd6fe681734c618caf180d130adcdfa0489aff3f9401465c1b6e4f74",
+      "rows": 950,
+      "retrieved_utc": "2026-11-13T01:56:30.545396+00:00"
+    },
+    {
+      "country": "Portugal",
+      "year": 2022,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2022/modis_2022_Portugal.csv",
+      "bytes": 179244,
+      "sha256": "5660c6bef3bb901c03f0ef1fbf3f6b9c4265b29fe633e584106eeacabda3887e",
+      "rows": 2273,
+      "retrieved_utc": "2026-11-13T01:56:30.733470+00:00"
+    },
+    {
+      "country": "Portugal",
+      "year": 2023,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2023/modis_2023_Portugal.csv",
+      "bytes": 84920,
+      "sha256": "ec571c1ad891a2394efe2ba68ea5d1cd19b9fecce03655bcf271caaf2f8b4522",
+      "rows": 1062,
+      "retrieved_utc": "2026-11-13T01:56:30.897520+00:00"
+    },
+    {
+      "country": "Portugal",
+      "year": 2024,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2024/modis_2024_Portugal.csv",
+      "bytes": 252905,
+      "sha256": "95a510eed0b7cec71bf0cda1adafc3c54618fed61f96cd8119d09a39d683c2b7",
+      "rows": 3151,
+      "retrieved_utc": "2026-11-13T01:56:31.066247+00:00"
+    },
+    {
+      "country": "Portugal",
+      "year": 2025,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2025/modis_2025_Portugal.csv",
+      "bytes": 391329,
+      "sha256": "5fe8915feff1be2784912bc86a836f5ea4f276445afb38138f3c29be0a9db8d1",
+      "rows": 4867,
+      "retrieved_utc": "2026-11-13T01:56:31.211796+00:00"
+    },
+    {
+      "country": "Indonesia",
+      "year": 2012,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2012/modis_2012_Indonesia.csv",
+      "bytes": 5524163,
+      "sha256": "2c4e88d3b132f9ed94d75b24cfafccf347bac343f2a7c50cd6ba47b0f5bfacf5",
+      "rows": 71135,
+      "retrieved_utc": "2026-11-13T01:56:31.570981+00:00"
+    },
+    {
+      "country": "Indonesia",
+      "year": 2013,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2013/modis_2013_Indonesia.csv",
+      "bytes": 4178716,
+      "sha256": "c1287263311b2829411c586a5eb1fccbb8484f1b10356f0be847fea97eba3c9b",
+      "rows": 53852,
+      "retrieved_utc": "2026-11-13T01:56:31.852566+00:00"
+    },
+    {
+      "country": "Indonesia",
+      "year": 2014,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2014/modis_2014_Indonesia.csv",
+      "bytes": 8933232,
+      "sha256": "3c6c51a63ba857d81e30e8017864cf457e0736dcfe4971b7669be9ec6b40f32f",
+      "rows": 115121,
+      "retrieved_utc": "2026-11-13T01:56:32.348199+00:00"
+    },
+    {
+      "country": "Indonesia",
+      "year": 2015,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2015/modis_2015_Indonesia.csv",
+      "bytes": 13914029,
+      "sha256": "986e4a768333b229fbf48759f7ca7b019b9eb4192f85251946ea6ac3220199b0",
+      "rows": 178578,
+      "retrieved_utc": "2026-11-13T01:56:33.058408+00:00"
+    },
+    {
+      "country": "Indonesia",
+      "year": 2016,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2016/modis_2016_Indonesia.csv",
+      "bytes": 1861699,
+      "sha256": "47a08f058c57baa2ea725ec980e67a1089d7583eb3e2a042fc019cf35589d1a6",
+      "rows": 24061,
+      "retrieved_utc": "2026-11-13T01:56:33.251378+00:00"
+    },
+    {
+      "country": "Indonesia",
+      "year": 2017,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2017/modis_2017_Indonesia.csv",
+      "bytes": 1382026,
+      "sha256": "054a1cccca3da84fc35fee962d5f4167ea2a3ce221be3be7884d4c4b5aa89061",
+      "rows": 17823,
+      "retrieved_utc": "2026-11-13T01:56:33.486637+00:00"
+    },
+    {
+      "country": "Indonesia",
+      "year": 2018,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2018/modis_2018_Indonesia.csv",
+      "bytes": 2996769,
+      "sha256": "3e7b488cf08c3043fe0ebf0db447d10e57cc6c25aadf900ca8183eae73300a0e",
+      "rows": 38074,
+      "retrieved_utc": "2026-11-13T01:56:33.737921+00:00"
+    },
+    {
+      "country": "Indonesia",
+      "year": 2019,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2019/modis_2019_Indonesia.csv",
+      "bytes": 7142482,
+      "sha256": "049f010fb65375c1bd5020a0aeb00f0c0a93630585c8439e4979894bafee35ec",
+      "rows": 90475,
+      "retrieved_utc": "2026-11-13T01:56:34.132256+00:00"
+    },
+    {
+      "country": "Indonesia",
+      "year": 2020,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2020/modis_2020_Indonesia.csv",
+      "bytes": 1272113,
+      "sha256": "e00db019742905232b11f56bb5cfb9158d5d10479c3d895202376b1046baf19f",
+      "rows": 16201,
+      "retrieved_utc": "2026-11-13T01:56:34.295476+00:00"
+    },
+    {
+      "country": "Indonesia",
+      "year": 2021,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2021/modis_2021_Indonesia.csv",
+      "bytes": 1114710,
+      "sha256": "62d0c407f9e9ebbecdddeae1529cc405e254e0aaa4a01f7a427929a186e3d0a0",
+      "rows": 14210,
+      "retrieved_utc": "2026-11-13T01:56:34.483271+00:00"
+    },
+    {
+      "country": "Indonesia",
+      "year": 2022,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2022/modis_2022_Indonesia.csv",
+      "bytes": 883571,
+      "sha256": "7ba203f76f72e96d73b03abb76a08613d59edb2c90fe17aaf580a18648f6fd33",
+      "rows": 11279,
+      "retrieved_utc": "2026-11-13T01:56:34.661671+00:00"
+    },
+    {
+      "country": "Indonesia",
+      "year": 2023,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2023/modis_2023_Indonesia.csv",
+      "bytes": 4151442,
+      "sha256": "9f9d79cc84eefab271fc82e63b7c49309547a1c31639bfd8590be91d1eea7f1e",
+      "rows": 52156,
+      "retrieved_utc": "2026-11-13T01:56:34.957938+00:00"
+    },
+    {
+      "country": "Indonesia",
+      "year": 2024,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2024/modis_2024_Indonesia.csv",
+      "bytes": 1865779,
+      "sha256": "ac90c680c1d0cd493b6997388ea5084037b2f1104c415a4570e4a05c6ef359d2",
+      "rows": 23542,
+      "retrieved_utc": "2026-11-13T01:56:35.186712+00:00"
+    },
+    {
+      "country": "Indonesia",
+      "year": 2025,
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/modis/2025/modis_2025_Indonesia.csv",
+      "bytes": 1409943,
+      "sha256": "949bf85a132fe817d0778e164c92ec0378a6045c0f72e684a70b2d16a3c3a19a",
+      "rows": 17847,
+      "retrieved_utc": "2026-11-13T01:56:35.474355+00:00"
+    }
+  ],
+  "dataset": "NASA FIRMS MODIS Collection 6.1 standard-processing archive (yearly country files)",
+  "citation": "NASA FIRMS, MODIS Collection 6.1 Active Fire (MCD14ML), DOI: 10.5067/FIRMS/MODIS/MCD14ML",
+  "note": "Monthly aggregates only. Count of detections, not count of fires."
+}

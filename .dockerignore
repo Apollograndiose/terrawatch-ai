@@ -1,0 +1,8 @@
+.venv
+**/node_modules
+**/.next
+ml/data
+data/cache
+**/__pycache__
+.git
+frontend/test-results

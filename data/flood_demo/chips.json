@@ -1,0 +1,431 @@
+{
+  "source": "Sen1Floods11 v1.1 hand-labelled chips (Bonafilia et al., 2020). Cite the paper; licence not stated by the source repository.",
+  "s1_encoding": "int16 = round(sigma0_dB * 100), nodata -32768",
+  "chips": [
+    {
+      "chip_id": "Bolivia_103757",
+      "event": "Bolivia",
+      "country": "Bolivia",
+      "date": "2018-02-15",
+      "bbox": [
+        -65.265121,
+        -14.25806,
+        -65.219127,
+        -14.212066
+      ],
+      "official_split": "bolivia",
+      "role": "holdout",
+      "model": "final",
+      "reference_water_fraction": 0.4015,
+      "has_optical": true
+    },
+    {
+      "chip_id": "Bolivia_129334",
+      "event": "Bolivia",
+      "country": "Bolivia",
+      "date": "2018-02-15",
+      "bbox": [
+        -65.219127,
+        -14.442035,
+        -65.173133,
+        -14.396041
+      ],
+      "official_split": "bolivia",
+      "role": "holdout",
+      "model": "final",
+      "reference_water_fraction": 0.6587,
+      "has_optical": true
+    },
+    {
+      "chip_id": "Bolivia_195474",
+      "event": "Bolivia",
+      "country": "Bolivia",
+      "date": "2018-02-15",
+      "bbox": [
+        -65.357108,
+        -15.407904,
+        -65.311114,
+        -15.36191
+      ],
+      "official_split": "bolivia",
+      "role": "holdout",
+      "model": "final",
+      "reference_water_fraction": 0.0059,
+      "has_optical": true
+    },
+    {
+      "chip_id": "Bolivia_23014",
+      "event": "Bolivia",
+      "country": "Bolivia",
+      "date": "2018-02-15",
+      "bbox": [
+        -64.897171,
+        -13.614148,
+        -64.851177,
+        -13.568154
+      ],
+      "official_split": "bolivia",
+      "role": "holdout",
+      "model": "final",
+      "reference_water_fraction": 0.0371,
+      "has_optical": true
+    },
+    {
+      "chip_id": "Bolivia_233925",
+      "event": "Bolivia",
+      "country": "Bolivia",
+      "date": "2018-02-15",
+      "bbox": [
+        -64.713196,
+        -12.832254,
+        -64.667202,
+        -12.78626
+      ],
+      "official_split": "bolivia",
+      "role": "holdout",
+      "model": "final",
+      "reference_water_fraction": 0.0,
+      "has_optical": true
+    },
+    {
+      "chip_id": "Bolivia_242570",
+      "event": "Bolivia",
+      "country": "Bolivia",
+      "date": "2018-02-15",
+      "bbox": [
+        -64.805183,
+        -13.15421,
+        -64.75919,
+        -13.108217
+      ],
+      "official_split": "bolivia",
+      "role": "holdout",
+      "model": "final",
+      "reference_water_fraction": 0.1558,
+      "has_optical": true
+    },
+    {
+      "chip_id": "Bolivia_290290",
+      "event": "Bolivia",
+      "country": "Bolivia",
+      "date": "2018-02-15",
+      "bbox": [
+        -64.897171,
+        -13.062223,
+        -64.851177,
+        -13.016229
+      ],
+      "official_split": "bolivia",
+      "role": "holdout",
+      "model": "final",
+      "reference_water_fraction": 0.0963,
+      "has_optical": true
+    },
+    {
+      "chip_id": "Bolivia_294583",
+      "event": "Bolivia",
+      "country": "Bolivia",
+      "date": "2018-02-15",
+      "bbox": [
+        -64.713196,
+        -12.188342,
+        -64.667202,
+        -12.142348
+      ],
+      "official_split": "bolivia",
+      "role": "holdout",
+      "model": "final",
+      "reference_water_fraction": 0.115,
+      "has_optical": true
+    },
+    {
+      "chip_id": "Bolivia_312675",
+      "event": "Bolivia",
+      "country": "Bolivia",
+      "date": "2018-02-15",
+      "bbox": [
+        -65.357108,
+        -14.763991,
+        -65.311114,
+        -14.717998
+      ],
+      "official_split": "bolivia",
+      "role": "holdout",
+      "model": "final",
+      "reference_water_fraction": 0.0606,
+      "has_optical": true
+    },
+    {
+      "chip_id": "Bolivia_314919",
+      "event": "Bolivia",
+      "country": "Bolivia",
+      "date": "2018-02-15",
+      "bbox": [
+        -65.127139,
+        -14.350048,
+        -65.081146,
+        -14.304054
+      ],
+      "official_split": "bolivia",
+      "role": "holdout",
+      "model": "final",
+      "reference_water_fraction": 0.4431,
+      "has_optical": true
+    },
+    {
+      "chip_id": "Bolivia_360519",
+      "event": "Bolivia",
+      "country": "Bolivia",
+      "date": "2018-02-15",
+      "bbox": [
+        -64.897171,
+        -13.568154,
+        -64.851177,
+        -13.52216
+      ],
+      "official_split": "bolivia",
+      "role": "holdout",
+      "model": "final",
+      "reference_water_fraction": 0.011,
+      "has_optical": true
+    },
+    {
+      "chip_id": "Bolivia_379434",
+      "event": "Bolivia",
+      "country": "Bolivia",
+      "date": "2018-02-15",
+      "bbox": [
+        -65.449096,
+        -15.177935,
+        -65.403102,
+        -15.131941
+      ],
+      "official_split": "bolivia",
+      "role": "holdout",
+      "model": "final",
+      "reference_water_fraction": 0.0412,
+      "has_optical": true
+    },
+    {
+      "chip_id": "Bolivia_432776",
+      "event": "Bolivia",
+      "country": "Bolivia",
+      "date": "2018-02-15",
+      "bbox": [
+        -65.081146,
+        -14.396041,
+        -65.035152,
+        -14.350048
+      ],
+      "official_split": "bolivia",
+      "role": "holdout",
+      "model": "final",
+      "reference_water_fraction": 0.4598,
+      "has_optical": true
+    },
+    {
+      "chip_id": "Bolivia_60373",
+      "event": "Bolivia",
+      "country": "Bolivia",
+      "date": "2018-02-15",
+      "bbox": [
+        -65.081146,
+        -13.568154,
+        -65.035152,
+        -13.52216
+      ],
+      "official_split": "bolivia",
+      "role": "holdout",
+      "model": "final",
+      "reference_water_fraction": 0.0627,
+      "has_optical": true
+    },
+    {
+      "chip_id": "Bolivia_76104",
+      "event": "Bolivia",
+      "country": "Bolivia",
+      "date": "2018-02-15",
+      "bbox": [
+        -64.75919,
+        -12.832254,
+        -64.713196,
+        -12.78626
+      ],
+      "official_split": "bolivia",
+      "role": "holdout",
+      "model": "final",
+      "reference_water_fraction": 0.0,
+      "has_optical": true
+    },
+    {
+      "chip_id": "Ghana_141910",
+      "event": "Ghana",
+      "country": "Ghana",
+      "date": "2018-09-18",
+      "bbox": [
+        -1.10385,
+        10.302598,
+        -1.057856,
+        10.348592
+      ],
+      "official_split": "train",
+      "role": "loeo",
+      "model": "fold:Ghana",
+      "reference_water_fraction": 0.2695,
+      "has_optical": true
+    },
+    {
+      "chip_id": "India_1068117",
+      "event": "India",
+      "country": "India",
+      "date": "2016-08-12",
+      "bbox": [
+        93.689254,
+        26.630377,
+        93.735247,
+        26.676371
+      ],
+      "official_split": "valid",
+      "role": "loeo",
+      "model": "fold:India",
+      "reference_water_fraction": 0.2088,
+      "has_optical": true
+    },
+    {
+      "chip_id": "Mekong_16233",
+      "event": "Mekong",
+      "country": "Cambodia (Mekong)",
+      "date": "2018-08-05",
+      "bbox": [
+        105.785608,
+        12.142348,
+        105.831602,
+        12.188342
+      ],
+      "official_split": "train",
+      "role": "loeo",
+      "model": "fold:Mekong",
+      "reference_water_fraction": 0.2373,
+      "has_optical": true
+    },
+    {
+      "chip_id": "Nigeria_598959",
+      "event": "Nigeria",
+      "country": "Nigeria",
+      "date": "2018-09-21",
+      "bbox": [
+        5.703224,
+        8.922786,
+        5.749218,
+        8.96878
+      ],
+      "official_split": "train",
+      "role": "loeo",
+      "model": "fold:Nigeria",
+      "reference_water_fraction": 0.2203,
+      "has_optical": true
+    },
+    {
+      "chip_id": "Pakistan_94095",
+      "event": "Pakistan",
+      "country": "Pakistan",
+      "date": "2017-06-28",
+      "bbox": [
+        70.78437,
+        30.171895,
+        70.830364,
+        30.217889
+      ],
+      "official_split": "valid",
+      "role": "loeo",
+      "model": "fold:Pakistan",
+      "reference_water_fraction": 0.2966,
+      "has_optical": true
+    },
+    {
+      "chip_id": "Paraguay_657443",
+      "event": "Paraguay",
+      "country": "Paraguay",
+      "date": "2018-10-31",
+      "bbox": [
+        -57.262209,
+        -23.96274,
+        -57.216216,
+        -23.916746
+      ],
+      "official_split": "valid",
+      "role": "loeo",
+      "model": "fold:Paraguay",
+      "reference_water_fraction": 0.2479,
+      "has_optical": true
+    },
+    {
+      "chip_id": "Somalia_12849",
+      "event": "Somalia",
+      "country": "Somalia",
+      "date": "2018-05-07",
+      "bbox": [
+        45.165855,
+        2.57565,
+        45.211849,
+        2.621643
+      ],
+      "official_split": "valid",
+      "role": "loeo",
+      "model": "fold:Somalia",
+      "reference_water_fraction": 0.1944,
+      "has_optical": true
+    },
+    {
+      "chip_id": "Spain_7370579",
+      "event": "Spain",
+      "country": "Spain",
+      "date": "2019-09-17",
+      "bbox": [
+        -0.781894,
+        38.082819,
+        -0.7359,
+        38.128813
+      ],
+      "official_split": "test",
+      "role": "loeo",
+      "model": "fold:Spain",
+      "reference_water_fraction": 0.2673,
+      "has_optical": true
+    },
+    {
+      "chip_id": "Sri-Lanka_92824",
+      "event": "Sri-Lanka",
+      "country": "Sri Lanka",
+      "date": "2017-05-30",
+      "bbox": [
+        80.994981,
+        6.163162,
+        81.040974,
+        6.209155
+      ],
+      "official_split": "train",
+      "role": "loeo",
+      "model": "fold:Sri-Lanka",
+      "reference_water_fraction": 0.2247,
+      "has_optical": true
+    },
+    {
+      "chip_id": "USA_86502",
+      "event": "USA",
+      "country": "United States",
+      "date": "2019-05-22",
+      "bbox": [
+        -94.885091,
+        39.232662,
+        -94.839097,
+        39.278656
+      ],
+      "official_split": "train",
+      "role": "loeo",
+      "model": "fold:USA",
+      "reference_water_fraction": 0.2532,
+      "has_optical": true
+    }
+  ]
+}

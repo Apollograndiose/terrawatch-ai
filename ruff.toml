@@ -1,0 +1,14 @@
+line-length = 140
+target-version = "py311"
+
+[lint]
+select = ["E", "F", "I", "B", "UP", "S"]
+# B008: FastAPI Depends() defaults. S608: SQL is assembled from fixed, validated clauses with bound parameters.
+ignore = ["S101", "S608", "B008"]
+
+[lint.per-file-ignores]
+"ml/scripts/*" = ["S310"]
+"**/tests/*" = ["S"]
+
+[lint.isort]
+known-first-party = ["app", "terrawatch_ml"]

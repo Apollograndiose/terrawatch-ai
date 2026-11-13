@@ -1,0 +1,17 @@
+# docker compose up --build   ->  http://localhost:3000
+# Run `python ml/scripts/fetch_flood_demo.py` first if you want the flood module inside the image.
+services:
+  api:
+    build: { context: ., dockerfile: backend/Dockerfile }
+    environment:
+      FIRMS_MAP_KEY: ${FIRMS_MAP_KEY:-}
+      TW_DEFAULT_DATASET: ${TW_DEFAULT_DATASET:-demo}
+    ports: ["8000:8000"]
+  web:
+    build:
+      context: ./frontend
+      args: { TERRAWATCH_API_URL: "http://api:8000" }
+    environment:
+      TERRAWATCH_API_URL: http://api:8000
+    ports: ["3000:3000"]
+    depends_on: [api]
