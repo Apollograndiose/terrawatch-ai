@@ -133,14 +133,14 @@ Training is deterministic (`random_state=0`, seeded sampling). The same commands
 ## Tests
 
 ```bash
-cd backend && pytest -m "not network"     # 36 tests: parsing, clustering, regions, validation, API, flood inference
+cd backend && pytest -m "not network"     # 41 tests: parsing, clustering, regions, validation, API, flood inference
 cd backend && pytest -m network           # 5 live checks: FIRMS feeds + archive, Earth Search COG render, GIBS
 cd ml && pytest tests                     # 10 tests: features, Otsu, Lee filter, metrics, fold leakage
 cd frontend && npm run lint && npm run typecheck && npm test   # ESLint, tsc, 18 Vitest tests
 cd frontend && E2E_NETWORK=1 npx playwright test               # 10 end-to-end workflows
 ```
 
-Last local run (2026-11-13): **all 79 tests passed** (36 + 5 + 10 + 18 + 10). The integration tests use a 2,997-row sample
+Last local run (2026-11-13): **all 84 tests passed** (41 + 5 + 10 + 18 + 10). The integration tests use a 2,997-row sample
 of the real snapshot, the real boundaries, the real flood chips and the trained model; no synthetic detections are used.
 
 ## Documentation
