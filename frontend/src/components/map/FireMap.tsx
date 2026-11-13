@@ -28,7 +28,8 @@ const EMPTY = { type: "FeatureCollection" as const, features: [] };
 export default function FireMap(props: Props) {
   const container = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MLMap | null>(null);
-  const [ready, setReady] = useState(false);
+  // Incremented on every style load (including a basemap fallback, which drops all sources), so data effects re-run.
+  const [ready, setReady] = useState(0);
   const [basemapError, setBasemapError] = useState(false);
   const cb = useRef(props);
   useEffect(() => {
@@ -71,7 +72,7 @@ export default function FireMap(props: Props) {
         if (!map) return;
         muteBasemap(map);
         addLayers(map);
-        setReady(true);
+        setReady((r) => r + 1);
         emitView(map, cb.current.onView);
       });
       map.on("moveend", () => map && emitView(map, cb.current.onView));
@@ -95,7 +96,7 @@ export default function FireMap(props: Props) {
       disposed = true;
       map?.remove();
       mapRef.current = null;
-      setReady(false);
+      setReady(0);
     };
   }, []);
 
@@ -162,11 +163,12 @@ export default function FireMap(props: Props) {
     map.addLayer({ id: "gibs", type: "raster", source: "gibs", paint: { "raster-opacity": 0.85 } }, firstDataLayer(map));
   }, [props.imageryDate, ready]);
 
-  // ---- camera requests
+  // ---- camera requests (only react to new requests, not to a later style reload)
+  const mapReady = ready > 0;
   useEffect(() => {
     const map = mapRef.current;
     const f = props.flyTo;
-    if (!map || !ready || !f) return;
+    if (!map || !mapReady || !f) return;
     if (f.bbox) {
       const [w, s, e, n] = f.bbox;
       map.fitBounds(
@@ -179,7 +181,7 @@ export default function FireMap(props: Props) {
     } else if (f.center) {
       map.flyTo({ center: f.center, zoom: f.zoom ?? 9, duration: 900 });
     }
-  }, [props.flyTo, ready]);
+  }, [props.flyTo, mapReady]);
 
   return (
     <div className="absolute inset-0">

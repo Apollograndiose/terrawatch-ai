@@ -39,7 +39,7 @@ class Geocoder:
                 "iso3": p["iso3"],
                 "bbox": p["bbox"],
                 "lat": (p["bbox"][1] + p["bbox"][3]) / 2,
-                "lon": (p["bbox"][0] + p["bbox"][2]) / 2,
+                "lon": (((p["bbox"][0] + p["bbox"][2]) / 2 + 180) % 360) - 180,
                 "source": "Natural Earth",
             }
             for p in hits[:5]

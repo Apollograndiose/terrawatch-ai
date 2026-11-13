@@ -85,6 +85,17 @@ def _prob_rgba(prob: np.ndarray) -> np.ndarray:
     return np.dstack([r, g, b, a]).astype(np.uint8)
 
 
+def _json_safe(v):
+    """Replace NaN/inf (e.g. precision with no predicted water) by None so the response is valid JSON."""
+    if isinstance(v, dict):
+        return {k: _json_safe(x) for k, x in v.items()}
+    if isinstance(v, list | tuple):
+        return [_json_safe(x) for x in v]
+    if isinstance(v, float) and not math.isfinite(v):
+        return None
+    return v
+
+
 def pixel_area_km2(transform, lat: float) -> float:
     return abs(transform.a) * 111.320 * math.cos(math.radians(lat)) * abs(transform.e) * 110.574
 
@@ -187,7 +198,7 @@ class FloodService:
             out["model_vs_reference"] = scores(confusion(t, pred[ok]))
             out["model_vs_reference"]["confusion_matrix"] = confusion(t, pred[ok]).tolist()
             out["otsu_vs_reference"] = scores(confusion(t, otsu[ok]))
-        return out
+        return _json_safe(out)
 
     def layer_png(self, chip_id: str, layer: str) -> bytes:
         if layer not in LAYERS:
@@ -248,7 +259,7 @@ class FloodService:
                     s1[s1 == r.nodata] = np.nan
                 bounds = transform_bounds(r.crs, "EPSG:4326", *r.bounds)
                 transform, crs = r.transform, r.crs
-        except rasterio.errors.RasterioIOError as exc:
+        except rasterio.errors.RasterioError as exc:
             raise ValueError("could not read GeoTIFF") from exc
         finite = s1[np.isfinite(s1)]
         if finite.size == 0:
@@ -277,4 +288,4 @@ class FloodService:
                 "differently processed imagery (e.g. RTC gamma0, no speckle handling) causes distribution shift."
             ),
         }
-        return _png(_prob_rgba(prob)), stats
+        return _png(_prob_rgba(prob)), _json_safe(stats)

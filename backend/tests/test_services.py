@@ -88,3 +88,48 @@ def test_settings_reject_malformed_map_key():
     with pytest.raises(ValidationError):
         Settings(FIRMS_MAP_KEY="short")
     assert Settings(FIRMS_MAP_KEY="").firms_map_key is None
+
+
+def test_country_bbox_handles_antimeridian():
+    from app.services.geocode import Geocoder
+
+    g = Geocoder(COUNTRIES, "http://unused.invalid", "test")
+    for name, lon_range in {"United States": (200, 260), "Russia": (30, 180), "Fiji": (175, 182), "New Zealand": (165, 180)}.items():
+        r = g.local(name)[0]
+        w, _, e, _ = r["bbox"]
+        assert e - w < 180, (name, r["bbox"])  # not the whole world
+        assert lon_range[0] <= (w + e) / 2 <= lon_range[1], (name, r["bbox"])  # centre on 0..360 for Pacific views
+        assert -180 <= r["lon"] <= 180
+    # Ordinary countries keep their plain bounds.
+    w, s, e, n = g.local("Australia")[0]["bbox"]
+    assert 112 < w < 114 and 153 < e < 160  # east edge includes Lord Howe Island
+
+
+def test_filter_treats_naive_datetimes_as_utc():
+    f = DetectionFilter(start="2026-11-05T00:00:00Z", end="2026-11-06T00:00:00")
+    assert f.end.tzinfo is not None and f.start < f.end
+    with pytest.raises(ValidationError):
+        DetectionFilter(start="2026-11-07T00:00:00", end="2026-11-06T00:00:00Z")
+
+
+def test_mosaic_takes_clear_pixels_from_the_next_tile(tmp_path):
+    """Pixels masked (cloud) in the first tile but clear in the second must use the second tile's reflectance."""
+    from app.services.imagery import ImageryService
+
+    svc = ImageryService("http://unused.invalid", tmp_path, "test")
+    nan = np.nan
+    tiles = {
+        # tile A: [clear, cloudy, no data]; tile B: [clear, clear, clear]
+        "S2A_10AAA_20261101_0_L2A": (
+            {"nir08": np.array([[0.30, 0.90, nan]]), "swir22": np.array([[0.10, 0.80, nan]])},
+            np.array([[True, False, False]]),
+        ),
+        "S2A_10AAB_20261101_0_L2A": (
+            {"nir08": np.array([[0.50, 0.40, 0.35]]), "swir22": np.array([[0.20, 0.15, 0.12]])},
+            np.array([[True, True, True]]),
+        ),
+    }
+    svc._read_one = lambda item_id, bbox, names: ({k: v.copy() for k, v in tiles[item_id][0].items()}, tiles[item_id][1].copy(), {})
+    refl, valid, _ = svc.read_reflectance("S2A_10AAA_20261101_0_L2A,S2A_10AAB_20261101_0_L2A", (0, 0, 0.1, 0.1), ["nir08", "swir22"])
+    assert valid.tolist() == [[True, True, True]]
+    assert refl["nir08"].tolist() == [[0.30, 0.40, 0.35]]  # pixel 0 kept from A, pixels 1-2 taken from B

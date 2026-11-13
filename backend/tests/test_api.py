@@ -132,6 +132,19 @@ def test_flood_chip_inference_uses_held_out_model(client):
 
 
 @needs_flood
+def test_every_demo_chip_returns_valid_json(client):
+    """Regression: a chip with undefined metrics (e.g. no predicted water) used to return NaN and HTTP 500."""
+    for c in client.get("/api/flood/chips").json()["chips"]:
+        r = client.get(f"/api/flood/chips/{c['chip_id']}")
+        assert r.status_code == 200, c["chip_id"]
+
+
+def test_mixed_timezone_filter_is_accepted(client):
+    r = client.get("/api/fires/map", params={"start": "2026-11-05T00:00:00Z", "end": "2026-11-06T00:00:00"})
+    assert r.status_code == 200
+
+
+@needs_flood
 def test_flood_upload_roundtrip_and_validation(client):
     # Real Sentinel-1 data: a demo chip converted back to float dB.
     with rasterio.open(REPO_ROOT / "data" / "flood_demo" / "s1" / "Bolivia_103757.tif") as r:

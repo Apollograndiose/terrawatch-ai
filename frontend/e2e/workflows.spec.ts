@@ -76,7 +76,8 @@ test("methods page lists data sources", async ({ page }) => {
 
 test("compare page validates its parameters", async ({ page }) => {
   await page.goto("/compare");
-  await expect(page.getByRole("alert")).toContainText("Missing or invalid bbox/date");
+  // Filter by text: Next.js also renders a (hidden) route announcer with role="alert".
+  await expect(page.getByRole("alert").filter({ hasText: "Missing or invalid bbox/date" })).toBeVisible();
 });
 
 test("imagery comparison renders real Sentinel-2 scenes", async ({ page }) => {

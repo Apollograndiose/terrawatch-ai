@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import UTC, datetime
 from typing import Literal
 
 from pydantic import BaseModel, Field, field_validator, model_validator
@@ -33,6 +33,12 @@ class DetectionFilter(BaseModel):
         if not (-180 <= w <= 180 and -180 <= e <= 180 and -90 <= s < n <= 90):
             raise ValueError("bbox must be west,south,east,north in WGS84 degrees")
         return v
+
+    @field_validator("start", "end")
+    @classmethod
+    def _utc(cls, v: datetime | None) -> datetime | None:
+        # Timestamps without an offset are UTC (all FIRMS times are UTC); this also keeps start/end comparable.
+        return v.replace(tzinfo=UTC) if v is not None and v.tzinfo is None else v
 
     @model_validator(mode="after")
     def _range(self):

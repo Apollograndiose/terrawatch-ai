@@ -30,8 +30,8 @@ export function StatusStrip({
       const r = await fetch("/api/live/refresh", { method: "POST" });
       const body = await r.json().catch(() => ({}));
       if (!r.ok) setMsg(body.detail ?? `Refresh failed (HTTP ${r.status})`);
-      else setMsg("Downloading FIRMS feeds…");
-      setTimeout(onRefreshed, 1500);
+      // Progress text comes from the polled live state, so it disappears when the download finishes.
+      onRefreshed();
     } catch {
       setMsg("Cannot reach the API.");
     }
@@ -85,7 +85,11 @@ export function StatusStrip({
           {refreshing ? "Refreshing…" : "Refresh feeds"}
         </button>
       ) : null}
-      {msg || live?.error ? <div className="w-full text-[11px] text-warn">{msg ?? live?.error}</div> : null}
+      {dataset === "live" && refreshing ? (
+        <div className="w-full text-[11px] text-muted">Downloading FIRMS feeds…</div>
+      ) : msg || live?.error ? (
+        <div className="w-full text-[11px] text-warn">{msg ?? live?.error}</div>
+      ) : null}
     </div>
   );
 }

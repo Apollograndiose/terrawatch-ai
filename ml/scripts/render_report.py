@@ -47,8 +47,15 @@ def confusion_png(cm: list[list[int]], title: str, path: Path) -> None:
     fig, ax = plt.subplots(figsize=(3.6, 3.2), dpi=150)
     ax.imshow(a / a.sum(), cmap="Blues")
     for (r, c), v in np.ndenumerate(a):
-        ax.text(c, r, f"{int(v):,}\n{100 * v / a.sum():.1f}%", ha="center", va="center", fontsize=8,
-                color="white" if v / a.sum() > 0.4 else "black")
+        ax.text(
+            c,
+            r,
+            f"{int(v):,}\n{100 * v / a.sum():.1f}%",
+            ha="center",
+            va="center",
+            fontsize=8,
+            color="white" if v / a.sum() > 0.4 else "black",
+        )
     ax.set_xticks([0, 1], ["pred. dry", "pred. water"])
     ax.set_yticks([0, 1], ["ref. dry", "ref. water"])
     ax.set_title(title, fontsize=9)
@@ -117,7 +124,8 @@ def main() -> int:
   Labels: −1 no data, 0 not water, 1 water (permanent + flood water). Sentinel-1 is GRD IW σ⁰ in dB (VV, VH)
   as pre-processed by Google Earth Engine.
 * **Model:** `{m["model"]["classifier"]}` on {len(m["model"]["feature_names"])} per-pixel features
-  ({", ".join(f"`{f}`" for f in m["model"]["feature_names"])}), {m["model"]["samples_per_chip"]:,} uniformly sampled labelled pixels per chip.
+  ({", ".join(f"`{f}`" for f in m["model"]["feature_names"])}),
+  {m["model"]["samples_per_chip"]:,} uniformly sampled labelled pixels per chip.
   Hyper-parameters fixed a priori: {", ".join(f"{k}={v}" for k, v in m["model"]["params"].items())}.
 
 ## Protocol (leakage control)

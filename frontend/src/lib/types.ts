@@ -252,13 +252,14 @@ export interface FloodChip {
   reference_water_fraction: number;
 }
 
+/** Metrics are null when undefined (e.g. precision when nothing was predicted as water). */
 export interface Scores {
-  precision: number;
-  recall: number;
-  f1: number;
-  iou: number;
-  accuracy: number;
-  kappa: number;
+  precision: number | null;
+  recall: number | null;
+  f1: number | null;
+  iou: number | null;
+  accuracy: number | null;
+  kappa: number | null;
   support_water: number;
   support_total: number;
   confusion_matrix?: number[][];

@@ -58,6 +58,7 @@ BANDS = {"truecolor": ["red", "green", "blue"], "swir": ["swir22", "nir08", "red
 SCL_INVALID = {0, 1, 3, 8, 9, 10}  # no data, saturated, cloud shadow, cloud medium/high, cirrus
 MAX_AOI_DEG = 0.6
 MAX_PX = 1024
+ITEM_CACHE_MAX = 1000
 
 DNBR_CLASSES = [
     # (lower, upper, label, RGBA) — Key & Benson (2006), USGS FIREMON
@@ -142,7 +143,7 @@ class ImageryService:
                     raise ImageryError(f"STAC search failed: HTTP {r.status_code}")
                 feats = r.json().get("features", [])
                 for f in feats:
-                    self._item_cache[f["id"]] = f
+                    self._remember(f["id"], f)
                 out[key] = self._acquisitions(feats, bbox)
         return {
             "bbox": list(bbox),
@@ -205,8 +206,15 @@ class ImageryService:
             raise ImageryError("Sentinel-2 item not found")
         if r.status_code != 200:
             raise ImageryError(f"STAC item lookup failed: HTTP {r.status_code}")
-        self._item_cache[item_id] = r.json()
-        return self._item_cache[item_id]
+        return self._remember(item_id, r.json())
+
+    def _remember(self, item_id: str, item: dict) -> dict:
+        """Bounded STAC item cache (dicts keep insertion order, so the oldest entry is evicted first)."""
+        self._item_cache.pop(item_id, None)
+        self._item_cache[item_id] = item
+        while len(self._item_cache) > ITEM_CACHE_MAX:
+            self._item_cache.pop(next(iter(self._item_cache)))
+        return item
 
     # ----------------------------------------------------------------- reading
     @staticmethod
@@ -257,10 +265,15 @@ class ImageryService:
         parts = [self._read_one(i, bbox, names) for i in ids]
         refl, valid, meta = parts[0]
         for r2, v2, _ in parts[1:]:
+            # Take the next tile's pixels where the mosaic has no data yet, or where it is masked (cloud) and the
+            # next tile is clear. Validity is updated only where pixels were taken, so it always describes the
+            # reflectance actually in the mosaic.
+            hole = ~np.all([np.isfinite(refl[n]) for n in names], axis=0)
+            has2 = np.all([np.isfinite(r2[n]) for n in names], axis=0)
+            take = has2 & (hole | (v2 & ~valid))
             for n in names:
-                hole = ~np.isfinite(refl[n])
-                refl[n][hole] = r2[n][hole]
-            valid |= v2 & ~valid
+                refl[n][take] = r2[n][take]
+            valid = np.where(take, v2, valid)
         has = np.all([np.isfinite(refl[n]) for n in names], axis=0)
         valid &= has
         meta.update(

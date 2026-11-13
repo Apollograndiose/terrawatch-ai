@@ -38,7 +38,8 @@ def status(request: Request):
     s = request.app.state.settings
     flood = request.app.state.flood
     return {
-        "datasets": {k: _ds_info(v) for k, v in store.datasets.items()},
+        # Copy first: a background refresh may add the "live" entry while we iterate.
+        "datasets": {k: _ds_info(v) for k, v in list(store.datasets.items())},
         "live": {
             "state": store.live_state,
             "error": store.live_error,
@@ -65,7 +66,8 @@ def refresh_live(request: Request):
     now = time.monotonic()
     if store.live_state == "refreshing":
         return {"state": "refreshing"}
-    if now - _last_refresh["t"] < REFRESH_COOLDOWN_S and "live" in store.datasets:
+    # The cooldown applies even after a failed refresh so repeated requests cannot hammer the FIRMS servers.
+    if _last_refresh["t"] and now - _last_refresh["t"] < REFRESH_COOLDOWN_S:
         raise HTTPException(429, f"live data was refreshed recently; try again in {int(REFRESH_COOLDOWN_S - (now - _last_refresh['t']))} s")
     _last_refresh["t"] = now
     store.live_state = "refreshing"

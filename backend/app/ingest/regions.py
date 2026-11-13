@@ -35,9 +35,26 @@ def load_countries(path: str) -> tuple[list[dict], shapely.STRtree, list]:
             }
         )
         g = shape(f["geometry"])
-        props[-1]["bbox"] = [round(v, 4) for v in g.bounds]
+        props[-1]["bbox"] = [round(v, 4) for v in display_bounds(g)]
         geoms.append(g)
     return props, shapely.STRtree(geoms), geoms
+
+
+def display_bounds(g) -> tuple[float, float, float, float]:
+    """Bounds for framing a map view. For shapes split by the antimeridian (USA, Russia, Fiji, New Zealand ...)
+    the plain bounds span ~360 degrees, so measure longitudes on 0..360 instead; then east may exceed 180,
+    which MapLibre's fitBounds accepts."""
+    w, s, e, n = g.bounds
+    if e - w <= 180:
+        return w, s, e, n
+    coords = shapely.get_coordinates(g)
+    lon360 = np.where(coords[:, 0] < 0, coords[:, 0] + 360, coords[:, 0])
+    w2, e2 = float(lon360.min()), float(lon360.max())
+    if e2 - w2 >= e - w:
+        return w, s, e, n
+    if w2 >= 180:  # entirely west of the antimeridian after all
+        w2, e2 = w2 - 360, e2 - 360
+    return w2, s, e2, n
 
 
 def assign_regions(df: pd.DataFrame, countries_path: Path) -> pd.DataFrame:
