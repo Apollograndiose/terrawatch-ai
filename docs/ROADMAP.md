@@ -23,7 +23,8 @@
 * Demo chips come from 2016–2019 events, so the module does not monitor current floods.
 
 **Engineering**
-* Docker/compose files are untested in this build environment; CI workflow is written but has not run on GitHub yet.
+* Docker/compose files are untested (Docker was unavailable and CI does not build images). CI runs only the offline
+  test suites; the live-network checks are run manually with `pytest -m network` and `E2E_NETWORK=1`.
 * No authentication or user accounts; designed as a public read-only research tool.
 
 ## Roadmap

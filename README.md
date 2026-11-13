@@ -40,7 +40,8 @@ observations from inferences, and publishes model results including where the mo
 | SAR water model: training, LOEO + hold-out evaluation, baselines, calibration | ✅ | `ml/scripts/train.py` run end-to-end, ML unit tests |
 | Flood module: held-out predictions, errors vs labels, uncertainty, inferred flood, GeoTIFF upload | ✅ | Integration + E2E |
 | FIRMS Area API (custom date ranges with MAP_KEY) | ⚠️ partial | URL builder + key validation tested; not called live (no key available) |
-| Docker / docker-compose / GitHub Actions | ⚠️ written, not run | Docker was not available in the build environment |
+| GitHub Actions CI (pytest, ruff, ESLint, tsc, Vitest, Playwright) | ✅ | First run passed 2026-11-13 (offline suites; network tests and 2 network E2E skipped) |
+| Docker / docker-compose | ⚠️ written, not run | Docker was not available in the build environment; CI does not build images |
 
 ## Screenshots
 
