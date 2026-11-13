@@ -15,6 +15,13 @@ docker compose up --build                 # http://localhost:3000
 
 Set `FIRMS_MAP_KEY` and `TW_DEFAULT_DATASET=live` in the environment or an `.env` file to start with live feeds.
 
+## Single container (e.g. Hugging Face Space)
+
+`deploy/huggingface/` holds a one-container image: Next.js serves port 7860 and proxies `/api` to FastAPI running
+internally. Copy its `Dockerfile` and `README.md` (the Space card) to the root of a Docker Space. The flood chips are
+fetched during the build. As of 2026-11-13, Hugging Face requires a PRO subscription for Docker Spaces. This image has
+been checked only by running the same two processes locally; it has not been built yet.
+
 ## Split hosting
 
 **Backend** (Render, Railway, Fly.io, Cloud Run, or any container host):
